@@ -75,14 +75,20 @@ XML (eXtensible Markup Language, расширяемый язык разметк�
 Кроме названия и значения у тега могут быть атрибуты.
 
 ```xml
-<ChaptersList>
-    <ChapterItem number=1 page=5>Предисловие</ChapterItem>
-    <ChapterItem number=2 page=6>Архивариус</ChapterItem>
-    <ChapterItem number=3 page=15>Раскол</ChapterItem>
-    <ChapterItem number=4 page=23>Дневник</ChapterItem>
-    <ChapterItem number=5 page=42>Медведь</ChapterItem>
-    <ChapterItem number=6 page=49>Обсерватория</ChapterItem>
-</ChaptersList>
+<Book>
+    <Name>Обрученные холодом</Name>
+    <TitleName>Сквозь зеркала</TitleName>
+    <Author>Кристель Дабо</Author>
+    <ISBN>978-5-00083-674-3</ISBN>
+    <ChaptersList>
+        <ChapterItem number=1 page=5>Предисловие</ChapterItem>
+        <ChapterItem number=2 page=6>Архивариус</ChapterItem>
+        <ChapterItem number=3 page=15>Раскол</ChapterItem>
+        <ChapterItem number=4 page=23>Дневник</ChapterItem>
+        <ChapterItem number=5 page=42>Медведь</ChapterItem>
+        <ChapterItem number=6 page=49>Обсерватория</ChapterItem>
+    </ChaptersList>
+</Book>
 ```
 
 #### JSON
@@ -126,7 +132,7 @@ JSON-массив заключается в квадратные скобки.
         {"name": "Раскол", "number": 3, "page": 15},
         {"name": "Дневник", "number": 4, "page": 23},
         {"name": "Медведь", "number": 5, "page": 42},
-        {"name": "Обсерватория", "number": 6, "page": 49},
+        {"name": "Обсерватория", "number": 6, "page": 49}
     ]
 }
 ```
