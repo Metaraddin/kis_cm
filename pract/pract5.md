@@ -87,6 +87,7 @@ XML (eXtensible Markup Language, расширяемый язык разметк�
         <ChapterItem number=4 page=23>Дневник</ChapterItem>
         <ChapterItem number=5 page=42>Медведь</ChapterItem>
         <ChapterItem number=6 page=49>Обсерватория</ChapterItem>
+        <ChapterItem number=37 page=335>Проходящая сквозь зеркала</ChapterItem>
     </ChaptersList>
 </Book>
 ```
@@ -132,7 +133,8 @@ JSON-массив заключается в квадратные скобки.
         {"name": "Раскол", "number": 3, "page": 15},
         {"name": "Дневник", "number": 4, "page": 23},
         {"name": "Медведь", "number": 5, "page": 42},
-        {"name": "Обсерватория", "number": 6, "page": 49}
+        {"name": "Обсерватория", "number": 6, "page": 49},
+        {"name": "Проходящая сквозь зеркала", "number": 37, "page": 335}
     ]
 }
 ```
