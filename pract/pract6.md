@@ -14,15 +14,15 @@ print(res.headers)
 
 ```json
 {
-    'Server': 'openresty', 
-    'Date': 'Tue, 10 Oct 2023 19:30:53 GMT', 
-    'Content-Type': 'application/json; charset=utf-8', 
-    'Content-Length': '524', 
-    'Connection': 'keep-alive', 
-    'X-Cache-Key': '/data/2.5/weather?APPID=***&lang=ru&q=Люберцыb&units=metric', 
-    'Access-Control-Allow-Origin': '*', 
-    'Access-Control-Allow-Credentials': 'true', 
-    'Access-Control-Allow-Methods': 'GET, POST'
+    "Server": "openresty", 
+    "Date": "Tue, 10 Oct 2023 19:30:53 GMT", 
+    "Content-Type": "application/json; charset=utf-8", 
+    "Content-Length": "524", 
+    "Connection": "keep-alive", 
+    "X-Cache-Key": "/data/2.5/weather?APPID=***&lang=ru&q=Люберцыb&units=metric", 
+    "Access-Control-Allow-Origin": "*", 
+    "Access-Control-Allow-Credentials": "true", 
+    "Access-Control-Allow-Methods": "GET, POST"
 }
 ```
 
@@ -52,7 +52,7 @@ Content type, или же media type - MIME (название происходи
 
 Тип `message` содержит сообщение инкапсулирующее другие сообщения. Например когда сообщение содержит пересылаемое сообщение (`message/rfc822`) или когда мы автоматически разбиваем большое сообщение на более мелкие для автоматической сборки и получателя (`message/partial`)  
 
-`multipart` содержит данные, состоящие из нескольких компонентов, которые могут иметь разные типы данных MIME. 
+`multipart` содержит данные, состоящие из нескольких компонентов, которые могут иметь разные типы данных MIME.  
 Частый пример - `multipart/form-data`, данные созданные при помощи API FormData - интерфейса создания набора пар ключ/значение, представляющих поля формы и их значения, отправляемые при помощи глобального метода `fetch()` (<https://developer.mozilla.org/en-US/docs/Web/API/FormData>)
 
 Так же часто встречается `muiltipart/byteranges` использующийся с ответом HTTP 206 Partial Content (указывает, что запрос выполнен успешно, а тело ответа содержит часть данных указанных в заголовке `Range` запроса)
