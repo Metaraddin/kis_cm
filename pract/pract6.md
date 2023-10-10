@@ -82,14 +82,14 @@ Content type, или же media type - MIME (название происходи
 res = requests.get(url)
 ```
 
-Если мы залезем в библиотеку requests, то обнаружим метод requests.get, которым мы воспользовались
+Если мы залезем в библиотеку `requests`, то обнаружим метод `requests.get()`, которым мы воспользовались
 
 ```python
 def get(url, params=None, **kwargs):
     return request("get", url, params=params, **kwargs)
 ```
 
-Который в свою очередь возвращает результат функции requests, которая создаёт экземпляр класса Requests.
+Который в свою очередь возвращает результат функции `requests`, которая создаёт экземпляр класса `Requests`.
 
 ```python
 req = Request(
