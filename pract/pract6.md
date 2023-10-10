@@ -89,7 +89,7 @@ def get(url, params=None, **kwargs):
     return request("get", url, params=params, **kwargs)
 ```
 
-Который в свою очередь возвращает результат функции `request`, которая создаёт экземпляр класса `Requests`.
+Который в свою очередь возвращает результат функции `request`, которая создаёт экземпляр класса `Request`.
 
 ```python
 req = Request(
