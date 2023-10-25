@@ -203,7 +203,4 @@ lint:
 
 test:
     pytest $(SRC_DIR)
-
-all:
-    ${PYTHON} ${MAIN_FILE}
 ```
