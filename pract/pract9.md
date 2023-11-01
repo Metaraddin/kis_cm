@@ -323,7 +323,7 @@ $ cat ~/.gitconfig
     st = status
     co = checkout
     br = branch
-    ci = commit
+    ci = commitS
 ```
 
 ## GitHub
