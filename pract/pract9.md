@@ -126,7 +126,7 @@ $ git status
 
 ```
 
-Теперь создадим сам коммит, для этого воспользуемся командой `git commit`, флаг `-m` позволяет нам указать дальше в качестве аргумента название коммита (иначе открылся бы файловый редактор)
+Теперь создадим сам коммит, для этого воспользуемся командой `git commit`, флаг `-m` позволяет нам указать в качестве аргумента сообщение к коммиту (иначе открылся бы файловый редактор)
 
 ```git
 git commit -m "first commit"
@@ -160,13 +160,14 @@ gitGraph:
     commit id: "add test4.txt"
 ```
 
-Создадим новую ветку и коммит в ней. Для создания ветки используется команда `git branch`, а для переключения на ветку - `git checkout`. В примерах изменение файлов, добавляемых в коммит, теперь происходят как бы "за кадром"
+Создадим новую ветку и коммит в ней. Для создания ветки используется команда `git branch`, а для переключения на ветку - `git checkout`. В примерах изменение файлов, добавляемых в коммит, теперь происходят как бы "за кадром"  
+
+Если вы хотите добавить в коммит все изменения, то вместо связки `git add .` и `git commit` можно использовать флаг `-a` - `git commit -am "fix"`
 
 ```git
 git branch branch1
 git checkout branch1
-git add .
-git commit -m "c4"
+git commit -am "c4"
 ```
 
 ```mermaid
@@ -184,8 +185,7 @@ gitGraph
 
 ```git
 git checkout -b branch2
-git add .
-git commit "c5"
+git commit -am "c5"
 ```
 
 ```mermaid
@@ -232,11 +232,9 @@ git brach -d branch1
 
 ```git
 git checkout branch2
-git add .
-git commit -m "c6"
+git commit -am "c6"
 git checkout main
-git add .
-git commit -m "c7"
+git commit -am "c7"
 ```
 
 ```mermaid
@@ -323,7 +321,7 @@ $ cat ~/.gitconfig
     st = status
     co = checkout
     br = branch
-    ci = commitS
+    ci = commit
 ```
 
 ## GitHub
