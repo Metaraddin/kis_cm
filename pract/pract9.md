@@ -306,6 +306,26 @@ git merge branch2
 
 ![pract9-1](images/pract9-1.gif)
 
+Для удобства можно добавить псевдонимы - сокращения для команд. Для этого необходимо отредактировать конфиг.  
+Например добавим псевдоним для команды `git status` - `git st`:  
+
+```text
+git config --global alias.ci commit
+```
+
+Посмотреть добавленные псевдонимы можно в конфиг файле:
+
+```text
+$ cat ~/.gitconfig
+[user]
+    email = metaraddin@gmail.com
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+```
+
 ## GitHub
 
 До этого мы работали в нашем репозитории исключительно локально. Давайте воспользуемся удалённым репозиторием и будем использовать для этого GitHub.
