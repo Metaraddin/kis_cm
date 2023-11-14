@@ -11,3 +11,5 @@
 1. [LISP](https://github.com/Metaraddin/kis_cm/blob/main/pract/pract7.md)
 1. [Make](https://github.com/Metaraddin/kis_cm/blob/main/pract/pract8.md)
 1. [Git](https://github.com/Metaraddin/kis_cm/blob/main/pract/pract9.md)
+1. [Разбор билетов](https://github.com/Metaraddin/kis_cm/blob/main/exam/main.ipynb)
+1. [Markdown](https://github.com/Metaraddin/kis_cm/blob/main/pract/pract11.md)
