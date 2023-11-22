@@ -406,25 +406,3 @@ git push
 `pull` же автоматически сливает коммиты, т.е. по сути является связкой команд `fetch` и `merge`. Применять `pull` необходимо осторожно, так как это может привести к конфликтам.
 
 ![pract9-4](images/pract9-4.png)
-
-## Задание
-
-Воспользуйтесь средством визуализации Git <https://git-school.github.io/visualizing-git/> и изобразите следующий репозиторий, как это было сделано в примере выше:
-
-```mermaid
-gitGraph
-    commit
-    commit
-    branch branch1
-    commit
-    commit
-    checkout main
-    merge branch1 tag: "fast-forward"
-    commit
-    branch branch2
-    commit
-    checkout main
-    commit
-    checkout branch1
-    commit
-```

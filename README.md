@@ -1,7 +1,3 @@
-# Конфигурационное управление
-
-Осенний семестр 2023
-
 1. [Основы работы в командной строке](https://github.com/Metaraddin/kis_cm/blob/main/pract/pract1.md)
 1. [Bash скрипты](https://github.com/Metaraddin/kis_cm/blob/main/pract/pract2.md)
 1. [Регулярные выражения](https://github.com/Metaraddin/kis_cm/blob/main/pract/pract3.md)
