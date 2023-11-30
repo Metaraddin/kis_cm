@@ -9,3 +9,5 @@
 1. [Git](https://github.com/Metaraddin/kis_cm/blob/main/pract/pract9.md)
 1. [Разбор билетов](https://github.com/Metaraddin/kis_cm/blob/main/exam/main.ipynb)
 1. [Markdown](https://github.com/Metaraddin/kis_cm/blob/main/pract/pract11.md)
+1. Контрольная работа
+1. [LaTeX](https://github.com/Metaraddin/kis_cm/blob/main/pract/pract13.md)
