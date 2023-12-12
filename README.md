@@ -11,3 +11,4 @@
 1. [Markdown](https://github.com/Metaraddin/kis_cm/blob/main/pract/pract11.md)
 1. Контрольная работа
 1. [LaTeX](https://github.com/Metaraddin/kis_cm/blob/main/pract/pract13.md)
+1. [Виртуальная стековая машина CPython](https://github.com/Metaraddin/kis_cm/blob/main/pract/pract14.md)
