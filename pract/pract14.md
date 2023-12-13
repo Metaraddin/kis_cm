@@ -84,7 +84,8 @@ CPython - самая популярная реализация, её мы рас
 
 ## CPython
 
-Возьмём для примера код из следующей [задачи](https://github.com/true-grue/kisscm/blob/main/pract/pract7.md#задача-1):
+Возьмём для примера код из следующей [задачи](https://github.com/true-grue/kisscm/blob/main/pract/pract7.md#задача-1).
+Разбирать будем на версии Python 3.11 (в зависимости от версии код может отличаться)
 
 ```python
 import dis
@@ -94,7 +95,7 @@ def foo(x):
         x -= 1
     return x + 1
 
-print(dis.dis(foo))
+dis.dis(foo)
 ```
 
 Тут используется библиотека `dis`. Перейдя на [главную страницу документации](https://docs.python.org/3/library/dis.html) данной библиотеки можно прочитать, что данная библиотека даёт нам возможность анализировать байт-код CPython путём его дизассемблеринга.
@@ -285,25 +286,28 @@ def foo(x):
 
 ## Задание
 
-Написать эквивалентное выражение на Python:
+Написать эквивалентное выражение на Python (3.11).
+Номер строки в исходном коде для первой инструкции не важен.
 
-```
- 1 0 LOAD_FAST 1 (a)
- 2 LOAD_CONST 1 (294)
- 4 BINARY_TRUE_DIVIDE
- 6 LOAD_FAST 1 (a)
- 8 LOAD_GLOBAL 0 (c)
- 10 BINARY_OR
- 12 LOAD_GLOBAL 1 (b)
- 14 LOAD_FAST 1 (a)
- 16 LOAD_GLOBAL 0 (c)
- 18 BINARY_SUBTRACT
- 20 BINARY_ADD
- 22 BINARY_TRUE_DIVIDE
- 24 LOAD_GLOBAL 2 (e)
- 26 BINARY_AND
- 28 BINARY_AND
- 30 RETURN_VALUE
+```text
+  4           0 RESUME                   0
+
+  5           2 LOAD_FAST                1 (a)
+              4 LOAD_CONST               1 (294)
+              6 BINARY_OP               11 (/)
+             10 LOAD_FAST                1 (a)
+             12 LOAD_GLOBAL              0 (c)
+             24 BINARY_OP                7 (|)
+             28 LOAD_GLOBAL              2 (b)
+             40 LOAD_FAST                1 (a)
+             42 LOAD_GLOBAL              0 (c)
+             54 BINARY_OP               10 (-)
+             58 BINARY_OP                0 (+)
+             62 BINARY_OP               11 (/)
+             66 LOAD_GLOBAL              4 (e)
+             78 BINARY_OP                0 (+)
+             82 BINARY_OP                0 (+)
+             86 RETURN_VALUE
 ```
 
 Ответом является код вида:
@@ -315,7 +319,7 @@ import dis
 def foo(*аргументы функции*):
     *тело функции*
 
-print(dis.dis(foo))
+dis.dis(foo)
 ```
 
 или
@@ -324,5 +328,5 @@ print(dis.dis(foo))
 import dis
 
 
-print(dis.dis(lambda *аргументы функции*: *тело функции*))
+dis.dis(lambda *аргументы функции*: *тело функции*)
 ```
